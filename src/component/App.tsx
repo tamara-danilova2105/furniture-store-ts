@@ -1,5 +1,7 @@
 import { useState } from "react";
 import styles from './App.module.scss';
+import { Link } from "react-router-dom";
+import imageTest from '@/assets/test.jpg';
 
 export const App = () => {
     const [count, setCount] = useState<number>(0);
@@ -8,6 +10,10 @@ export const App = () => {
 
     return (
         <div>
+            <img src={imageTest} alt="furniture store" />
+            <Link to='/about'>about</Link>
+            <br />
+            <Link to='/shop'>shop</Link>
             <p>{count}</p>
             <button className={styles.button} onClick={increment}>
                 +
