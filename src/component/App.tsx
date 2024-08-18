@@ -10,6 +10,7 @@ export const App = () => {
 
     return (
         <div>
+            <h1>PLATFORM={__PLATFORM__}</h1>
             <img src={imageTest} alt="furniture store" />
             <Link to='/about'>about</Link>
             <br />
