@@ -3,7 +3,8 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import { About } from '@/pages/About';
 import { Shop } from '@/pages/Shop';
 import { Suspense } from 'react';
-import { App } from './component/App';
+import './app/styles/index.scss';
+import { App } from './app/App';
 
 const root = document.getElementById('root');
 
